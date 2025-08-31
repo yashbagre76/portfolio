@@ -5,6 +5,7 @@ import About from './Components/About'
 import Explore from './Components/Explore'
 import Skillsection from './Components/Skiillsection'
 import ExperienceTimline from './Components/ExperienceTimline'
+import Projects from './Components/Projects'
 
 
 
@@ -20,6 +21,7 @@ function App() {
     <Explore/>
    <Skillsection/>
    <ExperienceTimline/>
+   <Projects/>
     </> 
   )
 }
