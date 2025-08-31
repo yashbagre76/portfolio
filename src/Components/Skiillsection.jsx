@@ -33,7 +33,7 @@ const SkillSection = () => {
         ))}
       </div>
     </div>
-  );
+  ); 
 };
 
 export default SkillSection;
