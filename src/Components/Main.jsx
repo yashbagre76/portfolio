@@ -1,47 +1,82 @@
-import { FaLinkedin } from "react-icons/fa";
- import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
+const MainSection = () => {
+  return (
+    <section
+      id="home"
+      className="w-full min-h-screen flex items-center justify-center bg-black px-6 md:px-20 lg:px-40 py-20"
+    >
+      <div className="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl w-full">
+        {/* Img section with animation */}
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <img
+            src="\src\assets\WhatsApp Image 2025-05-08 at 5.13.49 PM.jpeg"
+            alt="profile"
+            className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-gray-700 hover:scale-105 transition-transform duration-300"
+          />
+        </motion.div>
 
+        {/* Text section */}
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center md:text-left space-y-4 max-w-2xl"
+        >
+          <p className="font-semibold text-sm text-gray-400 uppercase tracking-wide">
+            Hello, I am
+          </p>
+          <h1 className="font-bold text-4xl md:text-5xl text-white leading-tight">
+            Yash Bagre
+          </h1>
+          <h2 className="text-2xl md:text-3xl text-gray-300 font-light">
+            MERN Stack Developer
+          </h2>
+          <p className="text-lg text-gray-400 leading-relaxed">
+            Passionate about crafting responsive, dynamic, and impactful web
+            applications that bring ideas to life with modern technologies.
+          </p>
 
+          {/* Buttons */}
+          <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-6">
+            <button className="bg-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-600 hover:scale-105 transition-all duration-300">
+              Download CV
+            </button>
+            <button className="bg-gray-200 text-black px-6 py-3 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-all duration-300">
+              Contact Info
+            </button>
+          </div>
 
+          {/* Socials */}
+          <div className="flex gap-6 justify-center md:justify-start mt-6">
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 rounded-full bg-gray-200 hover:bg-pink-500 hover:text-white transition-all duration-300 shadow-md"
+            >
+              <FaGithub className="w-6 h-6" />
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 rounded-full bg-gray-200 hover:bg-pink-500 hover:text-white transition-all duration-300 shadow-md"
+            >
+              <FaLinkedin className="w-6 h-6" />
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
- const  MainSection = () => {
-    return(
-     <div className="w-full h-auto  px-38 py-36 bg-black">
-        <div className="flex items-center justify-center gap-10">
-            {/* Img section */}
-            <div >
-                <img src="\src\assets\WhatsApp Image 2025-05-08 at 5.13.49 PM.jpeg" alt="" 
-                 className="w-80 h-80 rounded-full object-cover"
-                /></div>
-            {/* Text div */}
-            <div>
-                <p className="font-bold text-sm text-gray-300">Hello i am </p>
-                <h1 className="font-medium text-3xl text-gray-300">Yash Bagre </h1>
-               <h2 className="font-light text-4xl text-gray-300">A MERN Stack Developer </h2>
-               <h2 className="font-light text-4xl text-gray-300"> passionate about crafting responsive, dynamic, and impactful web applications. </h2>
-               <div>
-                <button className="bg-gray-100 p-4  rounded-full m-6 x-6 border-1">Download CV</button>
-                <button className="bg-gray-100 p-4 rounded-full m-3 px-6 border-1">Contact Info</button>
-               <div className="flex items-center justify-center gap-10  ">
-               <FaGithub className="w-10 h-10 bg-gray-100"/>
-               <div >
-               <FaLinkedin className="w-10 h-10 bg-gray-100" />
-               </div>
-              
-               </div>
-
-                </div>
-
-            </div>
-            {/* buttons  */}   
-          
-          
-               
-        </div>
-
-     </div>    
-    )
-
- }
- export default MainSection
+export default MainSection;

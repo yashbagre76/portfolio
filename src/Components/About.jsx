@@ -1,31 +1,75 @@
+import { motion } from "framer-motion";
 import { GiDiamondTrophy } from "react-icons/gi";
-import aboutImg from "../assets/yash.jpeg";
 
 const About = () => {
   return (
-    <div className="w-full flex flex-col min-h-screen  px-6 py-10 bg-black font-sans">
-      {/* Heading */}
-      <div className="text-center text-4xl font-extrabold text-gray-100 font-serif mb-10 tracking-wide">
-        <h1>About Me</h1>
-        
-      </div>
+    <section
+      id="about"
+      className="w-full min-h-screen bg-black px-6 md:px-20 py-16 flex items-center justify-center font-sans"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="max-w-4xl text-center"
+      >
+        {/* Heading */}
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-wide">
+          About Me
+        </h1>
 
- <div className="max-w-[900x] mx-auto">
-   <p className="text-lg font-medium text-center  text-gray-400 mt-4 leading-relaxed ">
-           I am currently in my final year of BBA, but my true passion lies in technology and programming. Over the past few years, I have completed multiple Full Stack Development courses and built several projects that strengthened my expertise in modern web development.
-
-My core stack includes <span className="text-white "> JavaScript, React.js, Node.js, Express.js, and MongoDB, and I am also familiar with advanced tools and frameworks such as Redux, GraphQL, and Prisma.</span> I enjoy working on animated, dynamic, and user-centric websites, always focusing on clean design and smooth performance.
-
-I am seeking a full-time opportunity as a Software Developer where I can contribute to impactful projects, collaborate with talented teams, and grow as a professional.
-Beyond coding, I enjoy boxing, running, cooking, watching movies, and constantly learning new skills to keep improving both personally and professionally.
-
-
+        {/* Paragraphs */}
+        <p className="text-lg text-gray-400 leading-relaxed mb-6">
+          I am currently in my final year of BBA, but my true passion lies in
+          technology and programming. Over the past few years, I have completed
+          multiple Full Stack Development courses and built several projects
+          that strengthened my expertise in modern web development.
         </p>
- </div>
-      
-      
-      </div>
-   
+
+        <p className="text-lg text-gray-400 leading-relaxed mb-6">
+          My core stack includes{" "}
+          <span className="text-white font-semibold">
+            JavaScript, React.js, Node.js, Express.js, and MongoDB
+          </span>
+          , and I am also familiar with tools like{" "}
+          <span className="text-white font-semibold">Redux, GraphQL, Prisma</span>.
+          I enjoy working on{" "}
+          <span className="text-pink-400 font-semibold">
+            animated, dynamic, and user-centric websites
+          </span>{" "}
+          with clean design and smooth performance.
+        </p>
+
+        <p className="text-lg text-gray-400 leading-relaxed mb-6">
+          I am seeking a{" "}
+          <span className="text-pink-400 font-semibold">
+            full-time Software Developer role
+          </span>{" "}
+          where I can contribute to impactful projects, collaborate with
+          talented teams, and grow as a professional.
+        </p>
+
+        <p className="text-lg text-gray-400 leading-relaxed">
+          Beyond coding, I enjoy{" "}
+          <span className="text-white">boxing, running, cooking, movies</span>{" "}
+          and continuously learning new skills to grow personally and
+          professionally.
+        </p>
+
+        {/* Highlight Row */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="flex items-center justify-center gap-3 mt-10 text-pink-400 font-semibold text-lg"
+        >
+          <GiDiamondTrophy className="text-3xl" />
+          <span>Dedicated to Building & Learning Every Day</span>
+        </motion.div>
+      </motion.div>
+    </section>
   );
 };
 
