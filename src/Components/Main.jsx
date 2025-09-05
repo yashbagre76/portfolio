@@ -53,7 +53,7 @@ const MainSection = () => {
               Download CV
             </a>
             <a className="bg-gray-200 text-black px-6 py-3 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-all duration-300"
-            href="#contact\">
+            href="#contact">
               Contact Info
             </a>
           </div>
