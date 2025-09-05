@@ -1,6 +1,7 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+
 const MainSection = () => {
   return (
     <section
@@ -46,12 +47,15 @@ const MainSection = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-6">
-            <button className="bg-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-600 hover:scale-105 transition-all duration-300">
+            <a className="bg-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-600 hover:scale-105 transition-all duration-300"
+            href="\public\yashbagreCV.pdf"
+            download="Yash_Bagre_CV.pdf">
               Download CV
-            </button>
-            <button className="bg-gray-200 text-black px-6 py-3 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-all duration-300">
+            </a>
+            <a className="bg-gray-200 text-black px-6 py-3 rounded-full shadow-md hover:bg-gray-300 hover:scale-105 transition-all duration-300"
+            href="#contact\">
               Contact Info
-            </button>
+            </a>
           </div>
 
           {/* Socials */}
