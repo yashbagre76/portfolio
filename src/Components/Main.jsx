@@ -17,7 +17,7 @@ const MainSection = () => {
           viewport={{ once: true }}
         >
           <img
-            src="/src/assets/WhatsApp Image 2025-05-08 at 5.13.49 PM.jpeg"
+            src="/img2.jpeg"
             alt="profile"
             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-gray-700 hover:scale-105 transition-transform duration-300"
           />
