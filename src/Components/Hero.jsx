@@ -17,7 +17,7 @@ const HeroSection = () => {
           to={item.toLowerCase()}
           smooth={true}
           spy={true} // 👈 highlight jab section active hoga
-          offset={-70}
+          offset={-70 }
           duration={500}
           activeClass="text-pink-400 font-bold border-b-4 border-pink-400"
           className="text-white font-medium hover:text-gray-300 transition-all cursor-pointer"

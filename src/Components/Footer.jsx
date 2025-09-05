@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <section
       id="contact"
-      className="w-full bg-black py-16 px-6 flex flex-col justify-between relative overflow-hidden"
+      className="w-full bg-black py-16 px-6 flex flex-col justify-between relative overflow-hidden min-h-screen"
     >
       {/* Background Gradient Accent */}
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-black to-black opacity-60"></div>
