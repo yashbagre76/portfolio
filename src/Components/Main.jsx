@@ -48,7 +48,7 @@ const MainSection = () => {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-6">
             <a className="bg-pink-500 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-600 hover:scale-105 transition-all duration-300"
-            href="\public\yashbagreCV.pdf"
+            href="/yashbagreCV.pdf"
             download="Yash_Bagre_CV.pdf">
               Download CV
             </a>
